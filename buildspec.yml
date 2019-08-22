@@ -43,8 +43,8 @@ phases:
       - cd ..
       - pwd
 
-#      - aws cloudformation package --template-file $TMP_DIR/sam-template.yaml --s3-bucket amjad-talkback-lambda --output-template-file outputSamTemplate.yml
-#      - ls
+      - aws cloudformation package --template-file $TMP_DIR/sam-template.yaml --s3-bucket amjad-talkback-lambda --output-template-file outputSamTemplate.yml
+      - ls
 #      - aws cloudformation deploy --template-file outputSamTemplate.yml --stack-name Amjad-talkback-stack
 
 
