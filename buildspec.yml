@@ -1,0 +1,62 @@
+version: 0.2
+
+env:
+  variables:
+    LAMBDA_NAME: "amjad-talkback-lambda"
+    BUCKET_NAME: "amjad-talkback-lambda"
+
+  #parameter-store:
+     # key: "value"
+     # key: "value"
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.7
+    commands:
+       - apt-get update
+       - apt-get install zip
+  pre_build:
+    commands:
+      - pip install virtualenv
+      - virtualenv env
+      - . env/bin/activate
+      - pip install -r requirements.txt
+      - pip list
+      - ls
+
+  build:
+    commands:
+#      - echo Hello from CodeBuild Project1
+#      - ISO_DATE=$(date +%Y-%m-%dT%H:%M:%S%z)
+#      - TMP_DIR="dist-$ISO_DATE"
+#      - mkdir $TMP_DIR
+#      - cp ./tberror/talkback_error/*.py $TMP_DIR
+#      - cp sam-template.yaml $TMP_DIR
+
+#      - cp -rf tbproject $TMP_DIR
+#      - cp -rf tbproject/talkback $TMP_DIR
+#      - cp -rf env/lib/python3.7/site-packages/* $TMP_DIR
+#      - cd $TMP_DIR;
+#      - ls
+
+#      - cd ..
+#      - pwd
+
+#      - aws cloudformation package --template-file $TMP_DIR/sam-template.yaml --s3-bucket amjad-talkback-lambda --output-template-file outputSamTemplate.yml
+#      - ls
+#      - aws cloudformation deploy --template-file outputSamTemplate.yml --stack-name Amjad-talkback-stack
+
+
+  #post_build:
+    #commands:
+      # - command
+      # - command
+#artifacts:
+#  files:
+#     - outputSamTemplate.yaml
+  #discard-paths: yes
+  #base-directory: location
+#cache:
+  #paths:
+    # - paths
