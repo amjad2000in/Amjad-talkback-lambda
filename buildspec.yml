@@ -38,7 +38,7 @@ phases:
       - cp -rf tbproject/talkback $TMP_DIR
       - cp -rf env/lib/python3.7/site-packages/* $TMP_DIR
       - cd $TMP_DIR;
-      - ls
+#      - ls
 
       - cd ..
       - pwd
